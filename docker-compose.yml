@@ -1,0 +1,22 @@
+# THE
+# MeME
+# PROJect
+#freebarbaradurso
+# 🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱
+# so basically here u start the programs
+# we will use the lightest containers possible but the os cannot start with the first
+# 6 letters of the alphabet.
+# 9 letters after its okey and i would say NICE.
+# 4 example
+# 20 letters after its okey: U. ubuntu is a good os, light enough for a 12core/24threads cpu (with 2gb of ram)
+# 🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱🅱
+version: "2"
+services:
+  carlos-service-bottom:
+    build: ./bottom_text
+  juan-service-top:
+    build: ./TOP-TEXT
+  telegrrram:
+    build: ./sus-whatsapp-bot-but-hey-its-telegram-instaed-lmao
+volumes:
+  no-idontwantthatfornow:
