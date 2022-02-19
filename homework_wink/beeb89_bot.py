@@ -1,6 +1,12 @@
-from logging import Filter
 from telegram.ext import *
-import telegram
+from dotenv import load_dotenv
+import os
+from os.path import join, dirname
+import redditpraw
+
+env_file = join(dirname(__file__), '.env')
+load_dotenv(env_file)
+telegram_secret = os.environ.get("telegram_key")
 
 def start_command(update, context):
     name = update.message.chat.first_name
@@ -22,14 +28,19 @@ def echo(update, context):
     update.message.reply_text("Culo")
 
 def reddit_handler(update, contex):
-    #Purl =  update.message.entities[-1]
+    print(update.message.text)
     for i in update.message.entities:
-        print(update.message.text[i["offset"]:i["length"]])
+        print(i)
+        url = update.message.text[i["offset"]:i["offset"]+i["length"]]
+        try:
+            redditpraw.reddit_image_succ(url)
+        except:
+            update.message.reply_text("HOOOOOOOOH dude its not reddit")
     update.message.reply_text("69 nice")
 
 def main():
     print("Started")
-    TOKEN = "NOT_TOKEN.PNG"
+    TOKEN = telegram_secret
     updater = Updater(TOKEN, use_context = True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start_command))
@@ -40,8 +51,6 @@ def main():
 
     dp.add_handler(MessageHandler(Filters.animation,echo))
     dp.add_handler(MessageHandler(Filters.entity('url'),reddit_handler))
-
-
 
     updater.start_polling()
     updater.idle()
