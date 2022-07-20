@@ -4,4 +4,9 @@
 
 # what
 
-so basically... angular. no circles or something, just angular. lmao
+~~so basically... angular. no circles or something, just angular. lmao~~
+
+> SO FUNNY :] 
+>
+> we are going FLUTTER BOYS
+
