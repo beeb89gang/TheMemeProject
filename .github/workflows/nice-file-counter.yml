@@ -1,0 +1,19 @@
+# TODO: This CI checks if there are at least one file with 69 lines in the repository
+# TODO: test this, dont think its working lmao
+
+name: LMFAO - Let Mantain at least one File Above and below 69 Oof
+
+on: 
+  push:
+    paths-ignore:
+    - 'docs/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Execute super useful bash script
+      run: .github/scripts/nice-file-counter.sh
+      shell: bash
+      working-directory: ./

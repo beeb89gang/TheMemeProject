@@ -1,0 +1,17 @@
+# TODO: This CI checks if sexy amogus is present in the head of each file
+
+name: Absolute Useful CI
+
+on: 
+  push:
+    paths-ignore:
+    - 'docs/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: echo "implement me you fu*king donkey"
+
+    
