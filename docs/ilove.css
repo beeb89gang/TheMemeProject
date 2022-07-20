@@ -1,0 +1,33 @@
+/* I hate CSS */
+
+body {
+  background-color: #333;
+  color: #424242;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2em;
+}
+
+section {
+    max-width: 1069px;
+    margin: 20px auto;
+    background-color: #FFF;
+    padding: 20px;
+    font-size: 133.7%;
+    box-shadow: 0 0 69px #000;
+}
+
+h1 {
+    font-size: 269.0% !important;
+}
+
+h2 {
+    font-size: 142.0% !important;
+}
+
+.pls-small {
+    max-width: 35%;
+}
+
+img {
+  max-width: 100%;
+}
