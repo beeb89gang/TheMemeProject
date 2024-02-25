@@ -5,3 +5,5 @@
 *.gif
 .env*
 *__pycache__*
+mACHINE-LEARNINGS/datasets/*.csv
+mACHINE-LEARNINGS/models/trained/*
